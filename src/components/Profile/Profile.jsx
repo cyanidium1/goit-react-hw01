@@ -1,9 +1,7 @@
-import user from '../../db/user.json';
-
 import css from './Profile.module.css';
 
-export const Profile = () => {
-  const { username, tag, location, avatar, stats } = user;
+export default function Profile({props}){
+  const { username, tag, location, avatar, stats } = props;
   return (
     <div className={css.profile}>
       <div className={css.description}>
